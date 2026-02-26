@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharmila | Frontend Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3498db;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to right, #3498db, #6dd5fa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero span {
+    color: #ffeb3b;
+}
+
+.hero h2 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: white;
+    color: #3498db;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f1f1f1;
+}
+
+/* SECTION */
+section {
+    padding: 70px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3498db;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    color: #555;
+}
+
+/* SKILLS */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-grid div {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* PROJECT */
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.project-card h3 {
+    color: #3498db;
+}
+
+.project-card p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.project-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background: #3498db;
+    transition: 0.3s;
+}
+
+.btn-sm:hover {
+    background: #2980b9;
+}
+
+.github {
+    background: #333;
+}
+
+.github:hover {
+    background: black;
+}
+
+/* CONTACT */
+.contact ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    margin-top: 40px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">Sharmila M</div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div>
+        <h1>Hi, I'm <span>Sharmila</span></h1>
+        <h2>Frontend Developer | Web Application Developer</h2>
+        <p>I build responsive and interactive web applications using modern technologies.</p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </div>
+</header>
+
+<section id="about" class="about container">
+    <h2>About Me</h2>
+    <p>
+        Passionate frontend developer specializing in building responsive,
+        user-friendly web applications using HTML, CSS, and JavaScript.
+        I focus on clean UI design, structured layouts, API integration,
+        and interactive user experiences.
+    </p>
+</section>
+
+<section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+        <div>HTML5</div>
+        <div>CSS3</div>
+        <div>JavaScript (ES6)</div>
+        <div>REST API Integration</div>
+        <div>Responsive Design</div>
+        <div>Git & GitHub</div>
+        <div>LocalStorage</div>
+        <div>UI/UX Fundamentals</div>
+    </div>
+</section>
+
+<section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <!-- Ecommerce Project -->
+    <div class="project-card">
+    <h3>LoveItBuyIt – E-Commerce Website</h3>
+    <p>
+        A fully responsive fashion eCommerce website built using HTML, CSS and JavaScript.
+        Features include product catalog, Add to Cart functionality,
+        cart page with total calculation, remove item option,
+        localStorage-based cart persistence and demo checkout system.
+    </p>
+
+    <div class="project-links">
+        <a href="https://sharmilashrr.github.io/loveitbuyit-ecommerce/" target="_blank" class="btn-sm">
+            Live Demo
+        </a>
+        <a href="https://github.com/sharmilashrr/loveitbuyit-ecommerce" target="_blank" class="btn-sm github">
+            View on GitHub
+        </a>
+    </div>
+</div>
+
+    <!-- Weather App -->
+    <div class="project-card">
+        <h3>Weather App</h3>
+        <p>
+            Real-time weather application integrating OpenWeather API
+            to display temperature, humidity, wind speed, and conditions
+            with dynamic UI and loading effects.
+        </p>
+        <div class="project-links">
+            <a href="https://sharmilashrr.github.io/weather-app/" target="_blank" class="btn-sm">Live Demo</a>
+            <a href="https://github.com/sharmilashrr/weather-app" target="_blank" class="btn-sm github">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- University Project -->
+    <div class="project-card">
+        <h3>University Management System</h3>
+        <p>
+            Structured university administration interface including
+            admin dashboard, mentor management, event handling,
+            notifications, and role-based UI design.
+        </p>
+        <div class="project-links">
+            <a href="https://github.com/sharmilashrr/University-project" target="_blank" class="btn-sm github">View on GitHub</a>
+        </div>
+    </div>
+
+</section>
+
+<section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <ul>
+        <li>Email: <a href="mailto:Sharmilamanoharansharmi@gmail.com">Sharmilamanoharansharmi@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/sharmilashrr" target="_blank">github.com/sharmilashrr</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/sharmila-m-9a3a07248/" target="_blank">linkedin.com/in/sharmila-m</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Sharmila | Frontend Developer Portfolio</p>
+</footer>
+
+</body>
+</html>
